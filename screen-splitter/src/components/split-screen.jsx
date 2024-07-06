@@ -1,12 +1,7 @@
 import * as React from "react";
 
-const SplitScreen = ({
-  leftChildren,
-  rightChildren,
-}: {
-  leftChildren: React.ReactNode;
-  rightChildren: React.ReactNode;
-}) => {
+const SplitScreen = ({ children }) => {
+  const [leftChildren, rightChildren] = children;
   return (
     <div style={{ display: "flex", height: "100vh" }}>
       <div
