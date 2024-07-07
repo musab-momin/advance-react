@@ -14,7 +14,7 @@ const RenderComponent = ({
       const data = await fetcherFunction();
       setResource(data);
     })();
-  });
+  }, []);
 
   return renderComponent(resource);
 };
