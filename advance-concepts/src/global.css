@@ -86,3 +86,82 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+.lbl {
+  font-size: 0.875rem;
+}
+
+.p-1rem {
+  padding: 0.75rem;
+}
+.px-1rem {
+  padding-inline: 0.75rem;
+}
+.py-1rem {
+  padding-block: 0.75rem;
+}
+
+.p-2rem {
+  padding: 1rem;
+}
+.px-2rem {
+  padding-inline: 1rem;
+}
+.py-2rem {
+  padding-block: 1rem;
+}
+
+.container {
+  max-width: 1160px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+.h-half {
+  height: 50%;
+}
+
+.grid-center-items {
+  display: grid;
+  place-items: center;
+}
+
+.flex-bx {
+  display: flex;
+}
+
+.flex-bx-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap1 {
+  gap: 0.75rem;
+}
+.gap2 {
+  gap: 1rem;
+}
+.gap3 {
+  gap: 2rem;
+}
