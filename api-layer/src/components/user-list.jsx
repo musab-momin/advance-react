@@ -32,7 +32,7 @@ const UserList = () => {
             Fetch users
           </button>
         </li>
-        <LazyRender renderLazy={status === "PENDING"} delay={800}>
+        <LazyRender renderLazy={status === "PENDING"} delay={500}>
           {users.map((user, _indx) => (
             <li key={user.id} className="p-16">
               id: {user.id}, name: {user.name}, username: {user.username},

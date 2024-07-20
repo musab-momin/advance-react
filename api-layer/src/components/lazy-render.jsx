@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-// This component will show loading text if the renderLazy prop take more time in updating then given delay number
+// This component will show loading text if the renderLazy didn't update before the delay time
 const LazyRender = ({ children, renderLazy, delay }) => {
   const [showLoader, setShowLoader] = useState(false);
 
@@ -15,11 +15,14 @@ const LazyRender = ({ children, renderLazy, delay }) => {
       setShowLoader(true);
     } else {
       timer = setTimeout(() => {
+        console.log("@@ WHAT HAPPENS NOW: >>>");
         setShowLoader(true);
       }, delay);
     }
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [delay, renderLazy]);
 
   if (showLoader) {
